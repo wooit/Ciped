@@ -1,0 +1,55 @@
+La société CIPED requiert vos talents pour fournir à ses utilisateurs la possibilité de trouver facilement les vélos en libre service (VLS) disponibles de la 
+ville de Los Emtepes. Le systeme de vélos en libre service est organisé de la manière suivante : 
+
+La ville de L.E. étant grande (1000 px sur 800 px), il y a 10 stations dans toute la ville (liste en fin de document).
+Les vélos sont disposés dans ces stations et attachés à des bornes, chaque station dispose de 10 bornes et compte au départ 5 vélos par station, les 5 bornes 
+libres servent à réceptionner les vélos qui viennent d'être utilisés.
+
+L'utilisateur (une fois inscrit et référencé dans la bdd) se connecte sur le site et dispose d'un formulaire sur lequel il rentre ses coordonnées (X,Y) et sa 
+destination (eventuellement un point au hasard).
+L'application lui répond en lui donnant la position des 2 stations les plus proches (depart et arrivée) et leur distance à vol d'oiseau.
+
+En cliquant sur le lien d'une des stations, on peut vérifier ses disponibilités (y a-t-il au moins un vélo disponible ? sur quelle borne ?), et en cliquant 
+sur le lien d'un vélo, l'utilisateur dispose d'un formulaire qui lui permet de réserver le vélo en entrant son identifiant et son n° de CB. 
+(il reçoit une confirmation avec le n° du vélo réservé et sa station/borne avec un code secret généré aléatoirement pour accéder au vélo reservé)
+
+votre mission est de : 
+- donner un chiffrage et une durée de réalisation du projet et établir un cahier des charges / étapes de réalisation (en pdf)
+- proposer une maquette fonctionnelle de ce projet incluant :
+=> les pages de navigation user avec toutes les informations pertinentes
+=> une page d'admin (accessible à une url spécifique/cachée, sans sécurisation) qui affiche la totalité des infos (liste des stations/bornes/vélos+statuts 
+voir ci-après)
+
+precisions et spécifications :
+- on utilise un serveur LAMP avec PHP 7.2 et mySQL 8
+- on utilise extensivement les requêtes AJAX pour interroger la base de données 
+- il ne doit y avoir AUCUN reload de page, la contrainte client est une one-page app
+
+Le client souhaite suivre l'activité sur une page d'admin dédiée et y retrouver les infos suivantes :
+Le nom de la station
+Sa position (en coordonnées cartesiennes X,Y)
+Le nombre de vélos disponibles par station (5 au départ +/- ceux en déplacement/HS)
+Le nombre de bornes disponibles (celles qui sont innocupées)
+Le nombre de vélo ou bornes en panne (celles qui sont HS, le taux de panne d'une borne et/ou d'un vélo est de 2% à chaque utilisation)
+Chaque vélo est identifié par un numéro de série à 8 chiffres.
+Un vélo peut avoir un certain nombre de statuts selon son utilisation :
+- Disponible (en état de marche et attaché à une borne)
+- Non Disponible : 
+    - vélo HS
+    - vélo en déplacement
+On suppose pour simplifier que les utilisateurs remettent toujours le vélo à une borne différente et on ne calcule pas le temps réel de trajet entre deux 
+bornes, une fois le vélo emprunté il est "immédiatement" remis dans la première borne libre de la destination. Si il n'existe plus de bornes libres dans 
+cette station, on choisit par défaut la plus proche...
+
+Liste des stations sur une grille de 1000px par 700 px :
+Num     X   Y
+#1      150,100
+#2      500,100
+#3      800,100
+#4      50,350
+#5      350,350
+#6      650,350
+#7      950,350
+#8      150,600
+#9      500,600
+#10     800,600
