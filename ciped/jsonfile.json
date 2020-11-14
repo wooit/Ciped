@@ -1,0 +1,16 @@
+[
+    "<center><h3> Creer un compte si vous utilisez cette app pour la premiere fois</h3><br><label>Pseudo</label><br><input type='text' id='pseudo' name='pseudo'><br><label>Mot de passe</label><br><input type='password' id='mdp' name='mdp'><br><input type='button' name='connexion' value='connexion'><input type='button' name='enregistrement' value='creer un compte'></center>",
+
+    "<center><h2>Renseignez vos identifiants pour la creation de votre compte</h2><br><label for=\"nom\">Nom</label><br><input id=\"nom\"  type=\"text\" name=\"nom\" ><br><label for=\"prenom\">Prénom</label><br><input id=\"prenom\"  type=\"text\" name=\"prenom\" ><br><label for=\"pseudo\">Pseudo</label><br><input id=\"pseudo\"  type=\"text\" name=\"pseudo\" ><br><label for=\"mdp\">Mdp</label><br><input id=\"mdp\"  type=\"password\" name=\"mdp\" ><br><label for=\"confirmation mdp\">Confirmer mdp</label><br><input id=\"confirmmdp\"  type=\"password\" name=\"confirmmdp\" ><br><input type=\"button\" id=\"submit\" name=\"creer\" value=\"creer\"></center>",
+
+    "<div id='containerLoc' style='text-align: center;'><h1>Bienvenue sur votre page perso</h1><p >Trouver les stations les plus proches (valeurs comprises entre 1 et 1000)</p><p>(map: 1000x800)</p></p><div id='loc1'><input type='text' id='positionX' class='reset' name='maPosition' placeholder='position actuelle X'><br><input type='text' id='positionY' class='reset' name='maPosition' placeholder='position actuelle Y'></div><br><div id='loc2'><input type='text' id='destinationX' class='reset' name='maDestination' placeholder='destination X'><br><input type='text' id='destinationY' class='reset' name='maDestination' placeholder='destination Y'></div><br><input type='reset' id='reset' value='reset'><button id='btn'>ok</button><p class='reponse_station'></div>",
+
+    "<div class='reserv_borne'><p class='borne_dispo'>Selectionner une borne pour louer un vélo :<select class='choix_station'></select></p><input type='button' value='Valider' id='selection'></div>",
+
+      "<div class='form_cb' align='center'><table><tr><td><label>Entrez votre N° de Carte Bleue</label></td></tr><tr><td align='right'><input type='text' id='cb' name='cb' placeholder='N° CB'></td></tr><tr><td align='right'><input type='button' id='valid_cb' name='valid_cb' value='Valider'></td></tr></table><br><p class='code_resa'></p></div>",
+
+      "<div class='depot_velo'><p class='borne_sans_velo'>Selectionner une borne pour deposer votre vélo :<select class='choix_depot'></select></p><input type='button' value='Valider' id='selection_depot'></div>",
+
+      "<center><div class='reserv_borne'><p class='borne_dispo'>Selectionner votre borne d'emprunt parmi les choix disponibles : &emsp; <select class='choix_station_emprunt'></select></p><p class='borne_dispo'>Selectionner votre borne de dépôt parmi les choix disponibles: &emsp; <select class='choix_station_depot'></select></p><input type='button' value='Valider' id='selection'></div></center>"
+]
+

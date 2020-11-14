@@ -1,0 +1,15 @@
+html { 
+    background: url(../assets/velo4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: lightskyblue;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    }
+
+   main{
+       display: flex;
+   }

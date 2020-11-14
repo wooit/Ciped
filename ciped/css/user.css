@@ -1,0 +1,15 @@
+html { 
+    background: url(../assets/velo2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: lightblue;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+a:visited {
+    color: lightseagreen;
+}
