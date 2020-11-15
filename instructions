@@ -14,7 +14,6 @@ sur le lien d'un vélo, l'utilisateur dispose d'un formulaire qui lui permet de 
 (il reçoit une confirmation avec le n° du vélo réservé et sa station/borne avec un code secret généré aléatoirement pour accéder au vélo reservé)
 
 votre mission est de : 
-- donner un chiffrage et une durée de réalisation du projet et établir un cahier des charges / étapes de réalisation (en pdf)
 - proposer une maquette fonctionnelle de ce projet incluant :
 => les pages de navigation user avec toutes les informations pertinentes
 => une page d'admin (accessible à une url spécifique/cachée, sans sécurisation) qui affiche la totalité des infos (liste des stations/bornes/vélos+statuts 
