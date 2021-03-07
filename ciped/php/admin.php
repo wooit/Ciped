@@ -1,6 +1,5 @@
 <?php
 
-// $handler = mysqli_connect("127.0.0.1", "geo", "geogeo548789","ciped");
 include('../db/db_access.php');
 
     $requete1 = "SELECT * FROM `borne`";
